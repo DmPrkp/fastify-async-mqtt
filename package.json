@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "start": "node index.js"
+    "build": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,12 @@
   },
   "homepage": "https://github.com/DmPrkp/fastify-async-mqtt#readme",
   "devDependencies": {
-
+    "@types/node": "^18.15.9",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "async-mqtt": "^2.6.3",
+    "fastify": "^4.15.0",
+    "fastify-plugin": "^4.5.0"
   }
 }
