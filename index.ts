@@ -10,7 +10,7 @@ declare module 'fastify' {
 }
 
 interface Options  {
-    url: string,
+    url?: string,
     opts?: IClientOptions,
     allowRetries?: boolean
 }
@@ -20,7 +20,7 @@ const fastifyMQTT: FastifyPluginAsync<Options> = async (fastify, options) => {
         if (fastify.mqttClient) throw new Error('mqtt client has already registered')
 
         let {url, opts, allowRetries} = options
-        let client = await mqtt.connectAsync(url, opts, allowRetries)
+        let client = await mqtt.connectAsync(url || '', opts, allowRetries)
 
         fastify.decorate('mqttClient', client)
 

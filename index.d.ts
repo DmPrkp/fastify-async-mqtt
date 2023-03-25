@@ -6,7 +6,7 @@ declare module 'fastify' {
     }
 }
 interface Options {
-    url: string;
+    url?: string;
     opts?: IClientOptions;
     allowRetries?: boolean;
 }
