@@ -17,7 +17,7 @@
     "async"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/DmPrkp/fastify-async-mqtt/issues"
   },
