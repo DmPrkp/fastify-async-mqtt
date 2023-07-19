@@ -36,7 +36,7 @@ server.listen({ port: 3000, host: '0.0.0.0' }, err => {
 or usage on request
 
 ```ts
-// another type of register
+// another type of plugin registration
 server.register(fastifyMQTT, { 
         opts: {host: 'mosquitto', port: 1883, protocol: 'mqtt'}, 
         allowRetries: false 
